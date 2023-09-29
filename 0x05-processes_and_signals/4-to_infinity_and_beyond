@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#displays "To Infinity and beyond" indefinitely
+#  Bash script that displays To infinity and beyond indefinitely
 
-while ((1))
+while ((1)) 
 do
-	echo "To Infinity and beyond"
+	echo "To infinity and beyond"
 	sleep 2
 done
