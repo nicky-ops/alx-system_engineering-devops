@@ -4,9 +4,10 @@
 # * In a list format
 # * Where only the part of the name after the first dash is displayed
 
+shopt -s nullglob
 for file in *; do
 	if [ -f "$file" ]; then
-		name_after_dash=$(echo "$file" | awk -F'-' '{print $2}')
+		name_after_dash=$(echo "$file" | sed 's/^[^-]*-//')
 		echo "$name_after_dash"
 	fi
 done
