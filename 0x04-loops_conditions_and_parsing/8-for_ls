@@ -7,7 +7,7 @@
 shopt -s nullglob
 for file in *; do
 	if [ -f "$file" ]; then
-		name_after_dash=$(echo "$file" | sed 's/^[^-]*-//')
+		name_after_dash="${file#*-}"
 		echo "$name_after_dash"
 	fi
 done
