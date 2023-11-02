@@ -31,5 +31,9 @@ Open Systems Interconnection model is a conceptual model from ISO that "provides
 The communications between sytems are split into seven abstraction layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
 Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it. Classes of functionality are realized in all software development through all standardized communication protocols.
 
+## LANs, WANS
+A local area network(LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.
+A Wide area Network(WAN) is a telecommunication network that extends over a large geographical area. and are often establilshed using leased telecommunication circuits.
 
-
+## Internet
+The Internet is the global system of interconnected computer networks that uses the internet protocol suite(TCP/IP) to communicate between networks and devices. 
