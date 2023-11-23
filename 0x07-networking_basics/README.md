@@ -37,3 +37,11 @@ A Wide area Network(WAN) is a telecommunication network that extends over a larg
 
 ## Internet
 The Internet is the global system of interconnected computer networks that uses the internet protocol suite(TCP/IP) to communicate between networks and devices. 
+
+## MAC address
+A Media Access Controll(MAC) address is a string of characters that identifies a device on a network and is tied to a network interface card found in your computer.
+Manufacturers assign a MAC address to a network adapter when it is produced. It is hardwired or hard-coded onto your computer’s NIC and is unique to it. Something called the Address Resolution Protocol (ARP) translates an IP address into a MAC address.
+
+## Localhost
+localhost is a hostname that refers to the current computer used to access it. The name localhost is reserved for loopback purposes.
+It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
