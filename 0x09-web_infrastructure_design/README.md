@@ -8,5 +8,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * You must be able to explain system redundancy
 * Know all the mentioned acronyms: LAMP, SPOF, QPS
 
+## Server
+A server is a computer that provides data or services to other computers via a network.
 ## Web Server
-A software that delivers wabe pages.
+A software that delivers web pages.
