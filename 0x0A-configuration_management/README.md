@@ -8,3 +8,8 @@
 * Your Puppet manifests must run without error
 * Your Puppet manifests first line must be a comment explaining what the Puppet manifest is about
 * Your Puppet manifests files must end with the extension .pp
+
+## Configuration Management
+It refers to the process of systematically handling changes to a system in a way that maintains integrity over time.
+Server Orchestration tools include; Puppet, Ansible, Chef and Salt
+
