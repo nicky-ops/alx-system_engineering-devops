@@ -1,7 +1,6 @@
 # Client configuration
 file { '/root/.ssh/config':
-  ensure  => directory,
-  mode    => '0600',
+  ensure  => file,
   content => "
 Host *
     PasswordAuthentication no
