@@ -14,6 +14,7 @@ What are the main HTTP requests
 What DNS stands for
 DNS stands for Domain Name System. It is a hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network.
 What is DNS main role
+DNS translates domain names, which are easier to remember for humans, into numerical IP addresses, which are used by computers to identify each other on the network.
 #### DNS Record Types
 1. A
 2. CNAME
