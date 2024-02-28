@@ -8,6 +8,6 @@ fi
 FILE_PATH="$1"
 SERVER_IP="$2"
 USERNAME="$3"
-PATH_SSH_KEY="$4"
+PATH_TO_SSH_KEY="$4"
 
-scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE_PATH" "$USERNAME@$SERVER_IP":~/ || { echo "file transfer failed"; exit 1; }
+scp -o StrictHostKeyChecking=no -i "$PATH_TO_SSH_KEY" "$FILE_PATH" "$USERNAME@$SERVER_IP":~/ || { echo "file transfer failed"; exit 1; }
