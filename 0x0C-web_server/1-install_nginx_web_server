@@ -3,7 +3,6 @@
 
 sudo apt-get update
 sudo apt-get install nginx -y
-sudo sed -i 's/^\(.*listen .*\)$/#\1/' /etc/nginx/sites-available/default
-sudo sed -i '/^\(\s*\)#.*listen \[::\]:80/ s/#//' /etc/nginx/sites-available/default
-sudo kill -s HUP $(cat //var/run/nginx.pid)
-sudo sh -c 'echo "<!DOCTYPE html><html><head><title>Hello World!</title></head><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html'
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
+service nginx start
