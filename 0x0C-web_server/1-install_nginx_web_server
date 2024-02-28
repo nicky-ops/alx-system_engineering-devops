@@ -2,9 +2,7 @@
 # Installs nginx server
 apt-get update
 apt-get -y install nginx
+sed -i 's/^\(listen .*\)80/\180/' /etc/nginx/sites-available/default
 ufw allow 'Nginx HTTP'
+service nginx restart
 echo "Hello World!" > /var/www/html/index.html
-if ! lsof -i :80 >/dev/null 2>&1; then
-    echo "Nginx is not listening on port 80. Starting Nginx..."
-    nginx
-fi
