@@ -8,5 +8,11 @@ A firewall is a network security system that monitors and controls incoming and 
 In this project, installed ufw and set up a few rules on the web server to block all incoming traffic save for the TCP ports; 22(SSH), 443(HTTPS), and 80(HTTP)
 Commands used 
 ```
-
+sudo apt install ufw
+sudo ufw default deny incoming
+sudo ufw allow OpenSSH
+sudo ufw allow 22
+sudo ufw enable -y
+sudo ufw allow 80
+sudo ufw allow 443 
 ```
