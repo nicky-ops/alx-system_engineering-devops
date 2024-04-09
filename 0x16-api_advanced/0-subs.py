@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 """
-get the number of subrcribers for a given subreddit
+number of subscribers for a given subreddit
 """
-
 
 from requests import get
 
 
 def number_of_subscribers(subreddit):
     """
-    this function queries the Reddit API and returns the number of
-    subscribers for a given subreddit
+    function that queries the Reddit API and returns the number of subscribers
+    (not active users, total subscribers) for a given subreddit.
     """
+
     if subreddit is None or not isinstance(subreddit, str):
         return 0
 
@@ -22,5 +22,6 @@ def number_of_subscribers(subreddit):
 
     try:
         return results.get('data').get('subscribers')
+
     except Exception:
         return 0
